@@ -1,0 +1,107 @@
+.nav-button{
+    /* display: block; */
+	padding: .5rem 3rem;
+	/* color: black;
+	font-size: 14pt; */
+    font-size: 18px!important;
+    line-height: 30px;
+    color: #000000;
+
+}
+nav.navbar{
+    background-image: linear-gradient(to top, rgba(255,0,0,0), rgba(229,230,234,1));
+    padding-left: 160px!important;
+    padding-right: 160px!important;
+}
+
+.navbar-collapse{
+    text-align: end;
+}
+
+.vl {
+    border-left: 1px solid #cdcdcd;
+    height: 100%;
+}
+
+.navbar-brand{
+    padding-left: 30px;
+}
+
+
+@media screen and (max-width: 1965px) {
+    .nav-button, .footer-nav-link{
+        font-size: 0.75rem!important;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .navbar img{
+        height: 3rem;
+    }
+
+
+
+}
+
+@media screen and (max-width: 1298px) {
+    nav.navbar{
+        padding-left: 20px!important;
+        padding-right: 20px!important;
+    }
+    .nav-button{
+        font-size: 0.7rem!important;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-toggler-icon{
+        width: 25px;
+        height: 25px;
+    }
+    .nav-button{
+        font-size: 0.7rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+
+    .navbar img{
+        height: 2rem;
+    }
+
+}
+@media screen and (max-width: 767px) {
+	.vl{
+		border: none;
+	}
+}
+@media screen and (max-width: 560px) {
+    .navbar-toggler-icon{
+        width: 20px;
+        height: 20px;
+    }
+    .nav-button{
+        font-size: 0.7rem;
+        padding-right:  0;
+    }
+    .navbar-brand{
+        padding: 0;
+    }
+
+}
+
+@media screen and (max-width: 357px) {
+    .navbar-toggler-icon{
+        width: 20px;
+        height: 20px;
+    }
+    .nav-button{
+        font-size: 0.5rem;
+        padding-right:  0;
+    }
+    .navbar-brand{
+        padding: 0;
+    }
+
+}
