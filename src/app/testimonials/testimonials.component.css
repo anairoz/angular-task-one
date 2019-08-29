@@ -32,6 +32,7 @@
 }
 .main-text{
     text-align: center;
+    color: white;
     margin-top: 1rem;
 }
 .main-text h2{
@@ -94,6 +95,14 @@
 
 
 @media screen and (max-width: 1965px) {
+    .main-text h2{
+        font-size: 1.4rem!important;
+    }
+    .main-text p{
+        font-size: 0.9rem!important;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .testimonial {
         padding-top: 2rem;
     }
@@ -155,12 +164,11 @@
 }
 @media screen and (max-width: 1024px) {
     .main-text h2{
-        font-size: 1.2rem!important;
+        font-size: 1.3rem!important;
     }
     .main-text p{
-        font-size: 0.7rem!important;
-        margin-left: auto;
-        margin-right: auto;
+        font-size: 0.8rem!important;
+
     }
     .user-photo{
         margin: -9% 0 0 0;
@@ -192,15 +200,6 @@
 }
 
 @media screen and (max-width: 768px) {
-    .main-text h2{
-        font-size: 1.3rem!important;
-    }
-    .main-text p{
-        font-size: 0.8rem!important;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
     .testimony{
         width: 60%;
         height: 18rem;
@@ -228,12 +227,11 @@
 
 @media screen and (max-width: 560px) {
     .main-text h2{
-        font-size: 1.3rem!important;
+        font-size: 1.2rem!important;
     }
     .main-text p{
-        font-size: 0.8rem!important;
-        margin-left: 10px;
-        margin-right: 10px;
+        font-size: 0.7rem!important;
+
     }
     .testimony{
         width: 85%;
