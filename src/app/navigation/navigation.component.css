@@ -22,7 +22,11 @@
     color: #000000;
 
 }
+<<<<<<< HEAD
 /*
+=======
+/* 
+>>>>>>> 90c91db08b013cdef0060a188d5006bd5c1a742e
 .navbar-collapse{
     text-align: end;
 } */
@@ -33,7 +37,10 @@
 }
 .navbar-nav{
 	display: flex;
+<<<<<<< HEAD
 	list-style: none;
+=======
+>>>>>>> 90c91db08b013cdef0060a188d5006bd5c1a742e
 }
 
 
