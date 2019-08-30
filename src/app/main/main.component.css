@@ -1,35 +1,27 @@
-#intro {
-    height: 100hv;
-}
-
-#intro {
-    background-image:  url('../../assets/img/main.jpg')no-repeat center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
 
 .mainhead {
-    display: grid;
-    box-sizing: border-box;
     position: relative;
     width: 100%;
     height: 100vh;
-    min-height: 35rem;
     background: url('../../assets/img/main.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.helpfix{
-    display: grid;
-    grid-template-rows: 1fr 150px;
-}
+
 .header-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     margin: 5px;
+    text-align: center;
+    padding-top: 300px;
 }
 .header-text h1{
     font-weight: 700;
@@ -42,15 +34,7 @@
     font-size: 18px;
     color: #484848;
 }
-.top-part{
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-	align-items: center;
-	margin: 32px auto 0;
-	text-align: center;
-	justify-content: center;
-}
+
 
 .input-group{
 	position: relative;
@@ -80,7 +64,8 @@
   position: absolute;
   background-color: #f9f9f9;
   padding: 12px 16px;
-  border-radius: 0 5px;
+  border-radius:0 0 5px 5px;
+  width: max-content;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -139,16 +124,20 @@ button:focus{
     /* min-width: 170px; */
 }
 
+.mainhead .whitebuttons{
+    align-self: flex-end;
+}
 
 span.name {
     color:#0e7200;
 }
 
-.white-buttons{
+ .white-buttons{
+    padding-bottom: 0;
     display: flex;
     justify-content: center;
-    padding: 0 3rem;
-    margin: auto;
+    /* transform: translateY(250%); */
+    padding-top: 300px;
 }
 .white-buttons img{
     margin: 20px;
@@ -165,18 +154,19 @@ span.name {
 }
 
 @media screen and (max-width: 1965px) {
-
-    .mainhead {
-    padding: 6rem 0 0rem;
+    .header-text, .white-buttons{
+        padding-top: 200px;
     }
+
     .header-text h1{
-        font-size: 2rem;
+        font-size: 2.5rem;
+        margin: 10px;
     }
     .header-text p{
         font-size: 15px;
     }
     .white-buttons img{
-        height: 3rem;
+        height: 3.5rem;
     }
     .search-button{
         font-size: 0.6rem!important;
@@ -190,20 +180,58 @@ span.name {
         padding-right:  0;
     }
 
-
+}
+@media screen and (max-width: 1444px) {
+    .header-text{
+        padding-top: 210px;
+    }
+    .white-buttons{
+        padding-top: 180px;
+    }
+    .header-text h1{
+        margin: 0;
+        font-size: 2.1rem;
+    }
+    .header-text p{
+        font-size: 0.8rem;
+    }
+    input{
+        height: 45px;
+        width: 370px;
+    }
+    .dropdown-button{
+        padding: 16px 21px;
+        font-size: small;
+    }
+    .dropdown::after {
+        top: 44%;
+        right: 5px;
+        transform: translateY(-50%);
+    }
+    .search-button{
+        padding: 2px 21px;
+        height: 47px;
+    }
+    .white-buttons img{
+        height: 3rem;
+    }
 
 }
 
 @media screen and (max-width: 1298px) {
+    .header-text, .white-buttons{
+        padding-top: 150px;
+    }
+    .header-text h1{
+        margin: 10px;
+    }
 
     input{
-        height: 54px;
+        height: 45px;
         width: 300px;
     }
-    .dropdown-button{
-        padding: 21px;
-        font-size: small;
-    }
+
+
 
 }
 @media screen and (max-width: 1024px) {
@@ -228,6 +256,16 @@ span.name {
 }
 
 @media screen and (max-width: 768px) {
+    .header-text, .white-buttons{
+        padding-top: 180px;
+    }
+    .header-text h1{
+        font-size: 300%;
+    }
+    .header-text p{
+        margin: 5px;
+        font-size: 0.7rem;
+    }
 
     .search-button{
         font-size: 0.6rem!important;
@@ -236,24 +274,29 @@ span.name {
     }
 
 
-
+    input{
+        width: 250px;
+        height: 40px;
+    }
     .white-buttons img{
         height: 2.5rem;
     }
-
 
     .mainhead {
         font-size: 0.5rem;
     }
     .dropdown-button{
-        padding: 18px;
+        padding: 15.5px 18px;
         font-size: x-small;
     }
     .dropdown-item{
         font-size: 0.7rem;
     }
 
-
+    .search-button{
+        height: 42px;
+        padding: 10px;
+    }
 }
 
 @media screen and (max-width: 560px) {
@@ -261,33 +304,45 @@ span.name {
     .header-text h1 {
         font-weight: 800;
         font-size: 275%;
+        padding: 0 20px;
     }
-    .search-button{
-        font-size: 0.2rem!important;
+    .header-text, .white-buttons{
+        padding-top: 100px;
     }
 
-    .helpfix{
-        display: grid;
-        grid-template-rows: 1fr 135px;
+    .search-button{
+        font-size: 0.3rem!important;
+        height: 37px;
     }
+
     .white-buttons img{
-        height: 35px;
+        height: 40px;
+    }
+    .dropdown-button{
+        padding: 5px 10px;
+        height: 37px;
     }
 
     .dropdown-item{
         font-size: 0.7rem;
     }
     input{
-        width: 150px;
+        height: 35px;
+        width: 200px;
     }
 
 }
 
 @media screen and (max-width: 357px) {
 
-    .header-text h1 {
+     .header-text h1 {
         font-weight: 800;
         font-size: 240%;
+        margin: 5px;
+    }
+    .header-text p{
+        margin: 5px;
+        font-size: 0.5rem;
     }
 
     .search-button{
@@ -295,24 +350,26 @@ span.name {
         padding: 4px;
     }
     .dropdown-button{
+        height: 26px;
         font-size: 0.5rem!important;
-
+        padding: 0 13px
     }
 
     .dropdown-item{
-        font-size: 0.5rem;
+        font-size: 0.5rem!important;
     }
 
     input{
-        width: 100px;
+        width: 150px;
         height: 24px;
     }
-    .dropdown::after {
+/*    .dropdown::after {
         width: 2.5px;
         height: 3px;
         top: 20%;
         right: 5px;
         transform: translateY(-100%);
-    }
+    } */
+
 
 }

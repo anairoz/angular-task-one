@@ -30,6 +30,8 @@
 }
 .main-text p{
     font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .grid-products{
     display: grid;
@@ -61,7 +63,7 @@
 }
 .all-products{
     color: #4dadbb;
-    font-size: 16px;
+    font-size: 12px;
     text-align: center;
     text-decoration: underline;
     margin: auto;
