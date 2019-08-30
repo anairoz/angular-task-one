@@ -20,7 +20,7 @@
     background: url('../../assets/img/main.jpg');
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-size: cover;
 }
 
@@ -28,7 +28,9 @@
     display: grid;
     grid-template-rows: 1fr 150px;
 }
-
+.header-text{
+    margin: 5px;
+}
 .header-text h1{
     font-weight: 700;
     font-size: 55px;
@@ -69,7 +71,7 @@
      font-size: 16px;
      border: none;
      cursor: pointer;
-     min-width: 160px;
+     /* min-width: 160px; */
      border-radius: 5px 0px 0px 5px;
 }
 
@@ -85,15 +87,15 @@
   display: block;
 }
 
-.dropdown::after {
+.dropdown-button::after {
    position: absolute;
    content: '';
    background: url("../../assets/img/arr.png") no-repeat;
    width: 10px;
    height: 7px;
    top: 50%;
-   right: 25px;
-   transform: translateY(-50%);
+    right: 0px;
+    transform: translateY(-50%);
 }
 
 .dropdown-item{
@@ -104,9 +106,7 @@
 }
 .dropdown-menu a:hover {background-color: #f1f1f1}
 
-.form-control{
-    border: none;
-}
+
 input{
    height: 55px;
    width: 500px;
@@ -117,6 +117,8 @@ input{
    justify-content: center;
    align-items: center;
    flex-grow: 1;
+   border: none;
+
 }
 input:focus{
    outline: none;
@@ -134,7 +136,7 @@ button:focus{
     border: none;
     border-radius: 0px 5px 5px 0px;
     height: 55px;
-    min-width: 170px;
+    /* min-width: 170px; */
 }
 
 
@@ -176,11 +178,11 @@ span.name {
     .white-buttons img{
         height: 3rem;
     }
-    .button-search{
+    .search-button{
         font-size: 0.6rem!important;
     }
     .dropdown-button{
-        padding: 16px 16px;
+        padding: 21px;
         font-size: small;
     }
     .dropdown-item{
@@ -194,28 +196,43 @@ span.name {
 
 @media screen and (max-width: 1298px) {
 
+    input{
+        height: 54px;
+        width: 300px;
+    }
+    .dropdown-button{
+        padding: 21px;
+        font-size: small;
+    }
 
 }
 @media screen and (max-width: 1024px) {
 
-    .button-search{
+    .search-button{
         font-size: 0.6rem!important;
+        height: 45px;
     }
 
     .head-text {
         font-size: 0.5rem;
     }
     .dropdown-button{
-        padding: 3px 10px;
-        font-size: x-small;
+        padding: 17px;
+        font-size: small;
     }
+    input{
+        height: 45px;
+    }
+
 
 }
 
 @media screen and (max-width: 768px) {
 
-    .button-search{
+    .search-button{
         font-size: 0.6rem!important;
+        height: 45px;
+        padding: 6px;
     }
 
 
@@ -229,7 +246,7 @@ span.name {
         font-size: 0.5rem;
     }
     .dropdown-button{
-        padding: 3px 10px;
+        padding: 18px;
         font-size: x-small;
     }
     .dropdown-item{
@@ -245,7 +262,7 @@ span.name {
         font-weight: 800;
         font-size: 275%;
     }
-    .button-search{
+    .search-button{
         font-size: 0.2rem!important;
     }
 
@@ -260,6 +277,9 @@ span.name {
     .dropdown-item{
         font-size: 0.7rem;
     }
+    input{
+        width: 150px;
+    }
 
 }
 
@@ -270,9 +290,9 @@ span.name {
         font-size: 240%;
     }
 
-    .button-search{
-        font-size: 0.2rem!important;
-        padding: 2px 4px;
+    .search-button{
+        height: 26px;
+        padding: 4px;
     }
     .dropdown-button{
         font-size: 0.5rem!important;
@@ -283,5 +303,16 @@ span.name {
         font-size: 0.5rem;
     }
 
+    input{
+        width: 100px;
+        height: 24px;
+    }
+    .dropdown::after {
+        width: 2.5px;
+        height: 3px;
+        top: 20%;
+        right: 5px;
+        transform: translateY(-100%);
+    }
 
 }

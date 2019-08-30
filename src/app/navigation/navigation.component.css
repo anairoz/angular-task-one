@@ -17,16 +17,12 @@
 .nav-button{
 	text-decoration: none;
 	padding: .5rem 3rem;
-    font-size: 18px!important;
+    font-size: 18px;
     line-height: 30px;
     color: #000000;
 
 }
-<<<<<<< HEAD
 /*
-=======
-/* 
->>>>>>> 90c91db08b013cdef0060a188d5006bd5c1a742e
 .navbar-collapse{
     text-align: end;
 } */
@@ -37,17 +33,14 @@
 }
 .navbar-nav{
 	display: flex;
-<<<<<<< HEAD
 	list-style: none;
-=======
->>>>>>> 90c91db08b013cdef0060a188d5006bd5c1a742e
 }
 
 
 
 @media screen and (max-width: 1965px) {
     .nav-button, .footer-nav-link{
-        font-size: 0.75rem!important;
+        font-size: 0.75rem;
         padding-left: 2rem;
         padding-right: 2rem;
     }
@@ -65,7 +58,7 @@
         padding-right: 20px!important;
     }
     .nav-button{
-        font-size: 0.7rem!important;
+        font-size: 0.7rem;
     }
 
 
@@ -92,6 +85,9 @@
 	.vl{
 		border: none;
 	}
+	.navbar-nav {
+		flex-direction: column;
+	}
 }
 @media screen and (max-width: 560px) {
     .navbar-toggler-icon{
@@ -99,7 +95,7 @@
         height: 20px;
     }
     .nav-button{
-        font-size: 0.7rem;
+        font-size: 0.5rem;
         padding-right:  0;
     }
     .navbar-brand{
@@ -115,10 +111,11 @@
     }
     .nav-button{
         font-size: 0.5rem;
-        padding-right:  0;
+        padding:  0;
     }
     .navbar-brand{
         padding: 0;
+		height: 1rem;
     }
 
 }
