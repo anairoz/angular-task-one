@@ -3,10 +3,12 @@
     <div class="navbar-brand">
         <a class="" href="#"> <img src="../assets/img/logo/logo.png" alt=""></a>
     </div>
-    <div class="navbar-icon">
-        <button class="" href="#" (click)="toggle()"><img src="../assets/img/icon.png" alt=""></button>
+    <div id="nav-icon1" (click)="toggle()" [ngClass]="{'nav-icon': true, 'open': open}">
+        <!-- <div id="nav-icon1" (click)="toggle()"> -->
+          <span></span> <span></span> <span></span>
+        <!-- </div> -->
     </div>
-    <div *ngIf="show" class="nav-menu" >
+    <div [ngClass]="{'nav-menu':true, 'menuOpen': open}">
         <ul  class="navbar-nav ">
             <li class="">
                 <a class="nav-button" href="#">ALL PRODUCTS</a>

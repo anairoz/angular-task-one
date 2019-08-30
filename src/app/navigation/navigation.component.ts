@@ -9,18 +9,13 @@ export class NavigationComponent implements OnInit {
 
   constructor() { }
 
-  public show:boolean = false;
-// public buttonName:any = 'Show';
+    public open:boolean = false;
 
     ngOnInit () {  }
-
+    // $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+	// 	$(this).toggleClass('open');
+	// })
     toggle() {
-      this.show = !this.show;
-
-      // CHANGE THE NAME OF THE BUTTON.
-      // if(this.show)
-      //   this.buttonName = "Hide";
-      // else
-      //   this.buttonName = "Show";
-    }
+      this.open = !this.open;
+  }
 }
