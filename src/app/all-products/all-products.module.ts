@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
-import { ProductsComponent } from './products/products.component'
+import { AllProductsComponent } from './all-products/all-products.component'
 
 const routes: Routes = [
-    { path: 'products', component: ProductsComponent }
+    { path: 'products', component: AllProductsComponent }
 ];
 
 @NgModule({
-  declarations: [],
+  declarations: [AllProductsComponent],
   imports: [
     CommonModule
   ]
