@@ -9,7 +9,9 @@ import { ProductsComponent } from './products/products.component';
 import { MainComponent } from './main/main.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { FooterComponent } from './footer/footer.component';
-import { AllProductsModule} from './all-products/all-products.module'
+import { AllProductsModule} from './all-products/all-products.module';
+import { HomeComponent } from './home/home.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component'
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { AllProductsModule} from './all-products/all-products.module'
     ProductsComponent,
     MainComponent,
     TestimonialsComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
