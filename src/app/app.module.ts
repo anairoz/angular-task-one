@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 
+
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { ProductsComponent } from './products/products.component';
@@ -11,7 +12,8 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { FooterComponent } from './footer/footer.component';
 import { AllProductsModule} from './all-products/all-products.module';
 import { HomeComponent } from './home/home.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component'
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { AddProductComponent} from './add-product/add-product.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     TestimonialsComponent,
     FooterComponent,
     HomeComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    AddProductComponent
   ],
   imports: [
     BrowserModule,
