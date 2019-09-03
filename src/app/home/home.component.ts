@@ -3,9 +3,7 @@ import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from '../page-not-found/page-not-found.component';
 
-const routes: Routes = [
-    { path: 'home', component: HomeComponent }
-];
+const routes: Routes = [];
 
 @Component({
   selector: 'app-home',
