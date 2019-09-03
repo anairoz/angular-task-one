@@ -14,14 +14,15 @@
 	padding-left: 30px;
 }
 .all-products{
-	margin-top: 70px;
+	top: 0px;
+	margin-top: 0px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	position: relative;
 	width: 100%;
 	min-height: 100vh;
-	padding: 3rem 0;
+	/* padding: 3rem 0; */
 	background-color: #f7f7f7;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -31,14 +32,12 @@
 }
 
 .main-text{
-	top: 100px;
+	margin-top: 100px;
     text-align: center;
 	color: black;
-    margin-top: 1rem;
+	    font-size: 30px;
 }
-.main-text h2{
-    font-size: 30px;
-}
+
 .main-text p{
     font-size: 16px;
     padding-left: 10px;
@@ -53,6 +52,14 @@
 	font-size: 18px;
 	line-height: 30px;
 	color: #000000;
+}
+button{
+	color: rgba(0,0,0,.5);
+    /* border-color: rgba(255,0,0,.1); */
+	line-height: 1;
+	background-color: transparent;
+    border: none;
+	border-radius: .25rem;
 }
 .add img{
 	margin-left: 10px;
@@ -73,17 +80,16 @@
 		height: 0.75rem!important;
 		width: 0.75rem!important;
 	}
-	.main-text h2{
+	.main-text{
         font-size: 1.4rem!important;
+		margin-top: 80px;
     }
     .main-text p{
         font-size: 0.9rem!important;
         margin-left: auto;
         margin-right: auto;
     }
-	.all-products{
-		margin-top: 50px;
-	}
+
 }
 
 
@@ -103,30 +109,31 @@
 
 }
 @media screen and (max-width: 1024px) {
-    .main-text h2{
+    .main-text{
         font-size: 1.3rem!important;
+		margin-top: 60px;
+
     }
     .all-products, .main-text p{
         font-size: 0.8rem!important;
 
     }
-	.all-products{
-		margin-top: 20px;
+
+	.navbar{
+		padding: 0;
 	}
+
+
 }
 
 @media screen and (max-width: 768px) {
-
     .add{
         padding-left: 1rem;
         padding-right: 1rem;
     }
-
-    .navbar img{
-        height: 2rem;
-    }
-
-
+	.navbar img{
+		height: 2rem;
+	}
 }
 
 @media screen and (max-width: 560px) {
@@ -142,15 +149,15 @@
 		height: 0.5rem!important;
 		width: 0.5rem!important;
 	}
-	.main-text h2{
+	.main-text {
+		margin-top: 60px;
+
         font-size: 1.2rem!important;
     }
     .all-products, .main-text p{
         font-size: 0.7rem!important;
 
     }
-	.all-products{
-		margin-top: 0px;
-	}
+
 
 }
