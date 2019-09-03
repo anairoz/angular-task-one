@@ -1,16 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
-import { AllProductsComponent } from './all-products/all-products.component'
+import { PageNotFoundComponent } from './page-not-found.component';
 
 const routes: Routes = [
-    { path: 'products', component: AllProductsComponent }
+    { path: 'page-not-found', component: PageNotFoundComponent }
 ];
 
+
 @NgModule({
-  declarations: [AllProductsComponent],
+  declarations: [PageNotFoundComponent],
   imports: [
     CommonModule
   ]
 })
-export class AllProductsModule { }
+export class PageNotFoundModule { }
