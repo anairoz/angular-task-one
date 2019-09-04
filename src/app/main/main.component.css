@@ -12,6 +12,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    -webkit-background-position: center;
+    -webkit-background-repeat: no-repeat;
+    -webkit-background-attachment: fixed;
+    -webkit-background-size: cover;
 }
 
 
