@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {MatDialog, MatDialogConfig} from "@angular/material";
 
-import { AddProductComponent} from '../../add-product/add-product.component';
+import { AddProductComponent} from './add-product/add-product.component';
 
 @Component({
   selector: 'app-all-products',

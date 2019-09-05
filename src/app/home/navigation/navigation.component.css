@@ -20,7 +20,7 @@
     font-size: 18px;
     line-height: 30px;
     color: #000000;
-
+	cursor: pointer;
 }
 
 .nav-icon{
@@ -102,10 +102,6 @@
 .navbar-nav{
 	display: flex;
 	list-style: none;
-}
-
-.icon{
-	background-image: url('../../assets/img/icon.png');
 }
 
 button{
