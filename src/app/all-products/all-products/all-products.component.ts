@@ -14,17 +14,16 @@ export class AllProductsComponent implements OnInit {
 
   ngOnInit() {
   }
-  openDialog() {
-      console.log('lol1')
-      const dialogRef = this.dialog.open(AddProductComponent, {
+    openDialog() {
+        console.log('lol1')
+        const dialogRef = this.dialog.open(AddProductComponent, {
             width: '350px',
             data: {}
-          });
+        });
 
-          dialogRef.afterClosed().subscribe(result => {
+        dialogRef.afterClosed().subscribe(result => {
             console.log('The dialog was closed');
-          });
+        });
 
-      }
-
+    }
 }
