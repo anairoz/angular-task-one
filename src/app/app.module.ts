@@ -21,6 +21,7 @@ import { LogInComponent } from './home/navigation/log-in/log-in.component';
 import { MainComponent } from './home/main/main.component';
 import { HomeComponent } from './home/home.component';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { AppComponent } from './app.component';
     MatNativeDateModule,
     MatIconModule,
     MatButtonModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    BrowserAnimationsModule
   ],
   providers: [MatDatepickerModule],
   bootstrap: [AppComponent],
